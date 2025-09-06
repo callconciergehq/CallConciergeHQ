@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block sensitive folders
+Disallow: /assets/
+Disallow: /cgi-bin/
+
+# Sitemap reference
+Sitemap: https://www.callconciergehq.com/sitemap.xml
