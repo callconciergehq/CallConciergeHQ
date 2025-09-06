@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CallConcierge HQ | AI Live Receptionists for UK Businesses</title>
+  <meta name="description" content="CallConcierge HQ: AI live receptionists that answer, qualify and book calls 24/7 for UK service businesses. Trusted, GDPR-ready, integrated with calendars & CRMs. Book a live demo." />
+  <link rel="canonical" href="https://callconciergehq.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="CallConcierge HQ | AI Live Receptionists" />
+  <meta property="og:description" content="Never miss a call — AI receptionists which answer, qualify and book clients 24/7. Built for UK clinics, med spas, law firms and agencies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://callconciergehq.com/" />
+  <meta property="og:image" content="https://callconciergehq.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CallConcierge HQ | AI Live Receptionists" />
+  <meta name="twitter:description" content="Convert more callers into confirmed bookings with a GDPR-ready AI receptionist." />
+  <meta name="twitter:image" content="https://callconciergehq.com/assets/og-image.jpg" />
+
+  <!-- Structured data (Organization, Website, Service, FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Organization","name":"CallConcierge HQ","url":"https://callconciergehq.com","logo":"https://callconciergehq.com/assets/logo.png"},
+      {"@type":"WebSite","name":"CallConcierge HQ","url":"https://callconciergehq.com","potentialAction":{"@type":"SearchAction","target":"https://callconciergehq.com/?q={search_term_string}","query-input":"required name=search_term_string"}},
+      {"@type":"Service","name":"AI Live Receptionists","provider":{"@type":"Organization","name":"CallConcierge HQ"},"areaServed":{"@type":"Country","name":"United Kingdom"},"serviceType":"Virtual receptionist, call answering, appointment booking","url":"https://callconciergehq.com"},
+      {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"How fast can we be live?","acceptedAnswer":{"@type":"Answer","text":"Most clients go live in 1–3 business days once call forwarding and scripts are set."}},
+        {"@type":"Question","name":"Is it GDPR-compliant?","acceptedAnswer":{"@type":"Answer","text":"Yes — we include consent prompts, configurable retention, and a Data Processing Addendum."}},
+        {"@type":"Question","name":"Do you integrate with calendars and CRMs?","acceptedAnswer":{"@type":"Answer","text":"Yes — Google/Outlook calendars, Calendly, HubSpot and many CRMs via webhooks."}},
+        {"@type":"Question","name":"Is there a contract?","acceptedAnswer":{"@type":"Answer","text":"Monthly plans with optional annual terms; 14-day money-back guarantee for new customers."}}
+      ]}]
+    ]
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <!-- Embedded premium CSS: 3D effects, dropdowns, executive palette -->
+  <style>
+    :root{
+      --bg:#0b1220; --card:#ffffff; --muted:#6b7280; --line:#e6eef8;
+      --brand:#0b6cff; --brand-2:#042f9a; --accent:#f5b301;
+      --radius:16px; --glass: rgba(255,255,255,0.6);
+      --shadow-strong: 0 24px 60px rgba(2,6,23,0.35);
+      --shadow-soft: 0 12px 30px rgba(2,6,23,0.12);
+      --glass-dark: rgba(11,18,32,0.6);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background: linear-gradient(180deg,#f8fbff 0%, #f1f5ff 100%);
+      color:#0f1724; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:focus{outline:3px solid rgba(11,108,255,0.12); outline-offset:2px}
+
+    /* NAV */
+    .nav-wrap{position:sticky; top:0; z-index:60; background:rgba(255,255,255,0.85); backdrop-filter: blur(6px); border-bottom:1px solid var(--line)}
+    .nav{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:#07112a}
+    .brand svg{width:36px;height:36px}
+    .nav-links{display:flex;gap:20px;align-items:center}
+    .nav-links a{font-weight:600;color:#0f1724;padding:6px 8px;border-radius:8px}
+    .nav-links a:hover{background:rgba(11,108,255,0.06); color:var(--brand-2)}
+    .nav-cta{background:linear-gradient(90deg,var(--brand),#2e6ef9);color:#fff;padding:10px 14px;border-radius:999px;box-shadow:var(--shadow-soft);font-weight:800}
+    .hamburger{display:none;border:0;background:transparent;font-size:20px}
+
+    @media (max-width:880px){
+      .nav-links{display:none} .hamburger{display:block}
+      .mobile-menu{display:none;flex-direction:column;padding:14px 20px;background:#fff;border-top:1px solid var(--line)}
+    }
+
+    /* HERO */
+    .hero{padding:80px 18px 48px; background:
+      radial-gradient(1000px 500px at 70% -100px,#dbeeff 0%, transparent 35%),
+      linear-gradient(180deg,#fff 0%, #eef6ff 100%);
+      border-bottom:1px solid var(--line)
+    }
+    .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+    @media (max-width:940px){.hero-inner{grid-template-columns:1fr;padding:32px 18px}}
+    .kicker{display:inline-block;background:#e8f0ff;color:#05346d;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;border:1px solid #d2e7ff}
+    .hero h1{font-size:44px;line-height:1.06;margin:12px 0 8px;color:#07112a}
+    .hero p.lede{font-size:18px;color:#2b3b52;max-width:60ch}
+    .hero-cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;border:0;font-weight:800;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--brand),#2e6ef9);color:#fff;box-shadow:var(--shadow-strong)}
+    .btn-ghost{background:#fff;border:1px solid #e6eef8;color:#07112a}
+
+    .trust{display:flex;gap:14px;align-items:center;margin-top:18px;color:var(--muted);font-size:13px}
+
+    .hero-card{border-radius:20px;background:linear-gradient(180deg,#07112a 0%, #0f213b 100%);color:#eaf2ff;padding:20px;border:1px solid rgba(255,255,255,0.04);box-shadow: 0 40px 80px rgba(11,18,40,0.45)}
+    .hero-card h3{margin:8px 0 10px}
+    .badge{display:inline-block;background:linear-gradient(90deg,#06b6d4,#0ea5e9);padding:6px 10px;border-radius:999px;font-weight:800;color:#052033;font-size:12px}
+
+    /* Grid / sections */
+    section{padding:64px 18px}
+    .container{max-width:1200px;margin:0 auto}
+    .section-title{font-size:28px;color:#07112a;margin-bottom:8px}
+    .muted{color:var(--muted)}
+    .spacer{height:16px}
+
+    /* Cards with 3D hover */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:940px){.grid-3{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow-soft);transition:transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s}
+    .card:hover{transform:translateY(-12px) rotateX(1deg); box-shadow: 0 30px 60px rgba(2,6,23,0.18)}
+    .card h3{margin:8px 0;color:#07112a}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#f7fbff;border:1px solid #e9f2ff;color:#28436a;font-weight:700;font-size:12px}
+
+    /* INDUSTRIES panel */
+    .industries{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+    @media (max-width:1000px){.industries{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:560px){.industries{grid-template-columns:repeat(2,1fr)}}
+    .industry{background:linear-gradient(180deg,#0f1830,#0b1220);color:#e7f0ff;border-radius:12px;padding:12px;text-align:center;box-shadow:0 12px 30px rgba(2,6,23,0.12);font-weight:700}
+
+    /* PRICING with dropdown detail */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:940px){.pricing{grid-template-columns:1fr}}
+    .plan{background:var(--card);border-radius:16px;padding:22px;border:1px solid var(--line);box-shadow:var(--shadow-soft);position:relative;overflow:visible;transition:transform .28s, box-shadow .28s}
+    .plan:hover{transform:translateY(-10px);box-shadow:0 30px 60px rgba(2,6,23,0.16)}
+    .plan.featured{border:2px solid var(--brand)}
+    .plan .price{font-size:34px;font-weight:900;color:#07112a}
+    .plan .meta{color:var(--muted);font-weight:700}
+
+    /* Dropdown / reveal panels: hover on desktop, click on touch */
+    .reveal{max-height:0;overflow:hidden;transition:max-height .36s cubic-bezier(.2,.9,.2,1),opacity .28s;opacity:0}
+    .plan:hover .reveal, .card.group-open .reveal{max-height:600px;opacity:1}
+    .reveal .list{margin:0;padding-left:18px}
+
+    /* FAQ: accordion */
+    .faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media (max-width:940px){.faq-grid{grid-template-columns:1fr}}
+    details{background:var(--card);border-radius:12px;padding:16px;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+    summary{cursor:pointer;font-weight:700;outline:none}
+    details[open]{transform:translateY(-6px);box-shadow:0 26px 50px rgba(2,6,23,0.12)}
+
+    /* Form */
+    form{max-width:720px;margin:0 auto;background:linear-gradient(180deg,#fff,#fbfcff);padding:20px;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+    label{display:block;margin-top:12px;font-weight:700}
+    input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid #e8f0ff;margin-top:6px;font-size:15px}
+    .form-cta{display:flex;gap:12px;align-items:center;margin-top:14px}
+    .note{color:var(--muted);font-size:13px;margin-top:8px}
+
+    /* CTA banner */
+    .cta{padding:22px;border-radius:16px;background:linear-gradient(90deg,var(--brand),#2563eb);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    @media (max-width:700px){.cta{flex-direction:column;align-items:stretch}}
+
+    footer{background:#07112a;color:#cfe6ff;padding:42px 18px}
+    footer a{color:#dcefff}
+  </style>
+</head>
+<body>
+  <noscript>Some features may not work correctly without JavaScript. Please enable JS for the best experience.</noscript>
+
+  <!-- NAV -->
+  <header class="nav-wrap" role="navigation" aria-label="Primary navigation">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="CallConcierge HQ home">
+        <!-- logo: replace with your logo file -->
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true"><defs><linearGradient id="lg1" x1="0" x2="1"><stop offset="0" stop-color="#0b6cff"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#lg1)"/><path d="M20 24c0-4 3.3-7 7.3-7h9.4C40.7 17 44 20 44 24v7.5c0 3-2.5 5.5-5.5 5.5h-3.4l-4.1 5.1a2 2 0 0 1-3.5-1.2v-3.9H27c-3.7 0-7-3.3-7-7V24z" fill="#fff"/></svg>
+        <span>CallConcierge <strong style="color:var(--brand)">HQ</strong></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#industries">Industries</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#contact" aria-label="Book a demo">Book Demo</a>
+      </nav>
+
+      <button id="menuBtn" class="hamburger" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="#features">Features</a>
+      <a href="#industries">Industries</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#contact">Book Demo</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="top" aria-label="Hero">
+      <div class="hero-inner" role="region" aria-labelledby="hero-heading">
+        <div>
+          <span class="kicker">Built for UK Service Businesses</span>
+          <h1 id="hero-heading">AI Live Receptionists that <span style="background:linear-gradient(90deg,#0b6cff,#0ea5e9);-webkit-background-clip:text;color:transparent">answer, qualify & book</span> — 24/7</h1>
+          <p class="lede">Never miss a call again. CallConcierge HQ provides a premium, GDPR-ready AI receptionist which captures intent, qualifies leads, and books appointments directly into your calendar and CRM.</p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact" aria-label="Book a live demo">Book a Live Demo</a>
+            <a class="btn btn-ghost" href="#pricing" aria-label="See pricing">See Pricing</a>
+          </div>
+
+          <div class="trust" role="list" aria-label="Trust features">
+            <div class="pill" role="listitem">GDPR-ready</div>
+            <div class="pill" role="listitem">Calendar & CRM integrations</div>
+            <div class="pill" role="listitem">Go live in 1–3 days</div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-labelledby="hero-why">
+          <span class="badge" aria-hidden="true">+30–60% more bookings</span>
+          <h3 id="hero-why">What you gain in week one</h3>
+          <ul style="list-style:none;padding:0;margin:10px 0 0;color:#dcecff">
+            <li style="margin:8px 0">✅ 24/7 coverage — reduce missed leads</li>
+            <li style="margin:8px 0">✅ Instant qualification & routing</li>
+            <li style="margin:8px 0">✅ Direct calendar booking + confirmations</li>
+            <li style="margin:8px 0">✅ Recordings & analytics for performance</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title" class="section-title">Features that drive revenue</h2>
+        <p class="muted">Engineered for conversions, speed, and reliability — built with enterprise-grade controls.</p>
+        <div class="spacer"></div>
+
+        <div class="grid-3">
+          <article class="card" data-expandable>
+            <h3>24/7 Call Answering</h3>
+            <p>Ultra-low latency answering with a human-like voice and custom greetings.</p>
+            <div class="reveal" aria-hidden="true">
+              <p class="muted" style="margin-top:10px">Round-the-clock coverage with configurable business hours, after-hours routing, and voicemail handling. Includes consent prompts and recording options for GDPR compliance.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Instant answer &lt;1s</li>
+                <li>Custom greetings & routing</li>
+                <li>After-hours intelligent voicemail</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-expandable>
+            <h3>Lead Qualification</h3>
+            <p>Structured qualification and intelligent routing to your sales team.</p>
+            <div class="reveal" aria-hidden="true">
+              <p class="muted" style="margin-top:10px">Use custom scoring rules to route high-value leads to priority queues. Export structured lead notes to CRM or Slack and reduce time-to-first-contact.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Custom qualification scripts</li>
+                <li>Priority routing for VIP callers</li>
+                <li>Automatic CRM push & webhook support</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-expandable>
+            <h3>Instant Booking</h3>
+            <p>Two-way calendar sync with confirmations and reminders.</p>
+            <div class="reveal" aria-hidden="true">
+              <p class="muted" style="margin-top:10px">Integrate with Google, Outlook or Calendly. Capture booking metadata, reduce no-shows with SMS/email confirmations and optional deposit capture.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Two-way calendar sync</li>
+                <li>Reminders & rescheduling</li>
+                <li>Deposit capture (optional)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-expandable>
+            <h3>CRM & Notes</h3>
+            <p>Push structured call notes and recordings to your systems.</p>
+            <div class="reveal" aria-hidden="true">
+              <p class="muted" style="margin-top:10px">Automate case creation, lead enrichment and team notifications. Works with HubSpot, Pipedrive, Salesforce and custom CRMs via webhooks.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Structured call notes</li>
+                <li>Recordings (configurable retention)</li>
+                <li>Webhook and API access</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-expandable>
+            <h3>GDPR & Security</h3>
+            <p>Data minimisation, consent, and DPA-ready controls.</p>
+            <div class="reveal" aria-hidden="true">
+              <p class="muted" style="margin-top:10px">We provide consent language, deletion workflows, retention windows, and a Data Processing Addendum for enterprise customers.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Configurable retention</li>
+                <li>DPA & sub-processor transparency</li>
+                <li>Secure cloud hosting and encryption in transit</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" data-expandable>
+            <h3>Insights Dashboard</h3>
+            <p>Actionable metrics to optimise scripts & conversions.</p>
+            <div class="reveal" aria-hidden="true">
+              <p class="muted" style="margin-top:10px">Track answer rates, conversion rates, no-shows, and missed opportunities. Exportable CSVs and weekly email summaries keep teams aligned.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Call conversion tracking</li>
+                <li>Top performing scripts & speakers</li>
+                <li>Exportable data & integrations</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section id="industries" aria-labelledby="industries-title" style="background:#f1f5ff;border-top:1px solid #e5edff;border-bottom:1px solid #e5edff">
+      <div class="container">
+        <h2 id="industries-title" class="section-title">Tailored for premium industries</h2>
+        <p class="muted">Pre-built scripts and workflows for sectors that value a white-glove client experience.</p>
+        <div class="spacer"></div>
+
+        <div class="industries" role="list">
+          <div class="industry" role="listitem" data-expandable>
+            <strong>Med Spas</strong>
+            <div class="reveal" aria-hidden="true" style="margin-top:8px;color:#dbe9ff">
+              <small>New patient intake, consult scheduling, reminder flows and deposit options to reduce no-shows.</small>
+            </div>
+          </div>
+          <div class="industry" role="listitem" data-expandable>
+            <strong>Law Firms</strong>
+            <div class="reveal" aria-hidden="true" style="margin-top:8px;color:#dbe9ff">
+              <small>Matter intake scripts, conflict checks and warm-transfer to senior counsel.</small>
+            </div>
+          </div>
+          <div class="industry" role="listitem" data-expandable>
+            <strong>Clinics</strong>
+            <div class="reveal" aria-hidden="true" style="margin-top:8px;color:#dbe9ff">
+              <small>Referral triage, compliance prompts, pre-screening and follow-ups.</small>
+            </div>
+          </div>
+          <div class="industry" role="listitem" data-expandable>
+            <strong>Estate Agents</strong>
+            <div class="reveal" aria-hidden="true" style="margin-top:8px;color:#dbe9ff">
+              <small>Viewing scheduling, vendor/tenant triage and fast lead capture for hot prospects.</small>
+            </div>
+          </div>
+          <div class="industry" role="listitem" data-expandable>
+            <strong>Trades & Services</strong>
+            <div class="reveal" aria-hidden="true" style="margin-top:8px;color:#dbe9ff">
+              <small>Quick qualification, urgent job tagging and immediate SMS confirmations for home services.</small>
+            </div>
+          </div>
+          <div class="industry" role="listitem" data-expandable>
+            <strong>Agencies</strong>
+            <div class="reveal" aria-hidden="true" style="margin-top:8px;color:#dbe9ff">
+              <small>Lead triage, brief capture and warm transfer to account teams.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section aria-labelledby="proof" class="container">
+      <h2 id="proof" class="section-title">Brands grow faster with CallConcierge HQ</h2>
+      <div class="spacer"></div>
+      <div style="display:flex;gap:18px;align-items:center">
+        <div style="width:88px;height:88px;border-radius:999px;background:linear-gradient(45deg,#1e3a8a,#0ea5e9)"></div>
+        <div>
+          <blockquote style="margin:0;font-size:18px;color:#07112a">“Within the first month we captured 42 leads we would’ve missed after hours. Bookings are up and the team’s workload is down.”</blockquote>
+          <p class="muted" style="margin:8px 0 0">Operations Manager — Private Clinic, London &nbsp; <span style="color:#f5b301">★★★★★</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" aria-labelledby="pricing-title" style="background:#ffffff">
+      <div class="container">
+        <h2 id="pricing-title" class="section-title">Simple, scalable pricing</h2>
+        <p class="muted">Monthly plans. Cancel any time. Prices exclude VAT.</p>
+        <div class="spacer"></div>
+
+        <div class="pricing" aria-label="Pricing plans">
+          <!-- STARTER -->
+          <article class="plan" role="region" aria-labelledby="starter-title" data-plan>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <h3 id="starter-title">Starter</h3>
+              <div class="meta">Up to 300 calls / month</div>
+            </div>
+            <div class="price" aria-hidden="true">£399 <small style="font-size:12px;color:var(--muted)">/month</small></div>
+            <div class="spacer"></div>
+            <ul style="margin:0;padding-left:18px;color:#0f1724">
+              <li>24/7 answering & triage</li>
+              <li>1 calendar integration</li>
+              <li>Basic CRM export</li>
+            </ul>
+
+            <div class="spacer"></div>
+            <a class="btn btn-ghost" href="#contact" aria-label="Start trial">Start Trial</a>
+
+            <!-- reveal more details on hover/tap -->
+            <div class="reveal" aria-hidden="true">
+              <h4 style="margin-top:14px">Starter details</h4>
+              <p class="muted">Includes setup, basic scripts, and standard reporting. Best for single-location clinics and boutique practices looking for immediate coverage.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Setup & configuration included</li>
+                <li>Call recordings optional</li>
+                <li>Email and standard phone support</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- GROWTH -->
+          <article class="plan featured" role="region" aria-labelledby="growth-title" data-plan>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div><span style="background:var(--brand);color:#fff;padding:6px 10px;border-radius:999px;font-weight:800;font-size:12px">Most popular</span></div>
+              <div class="meta">Up to 1,000 calls / month</div>
+            </div>
+            <h3 id="growth-title">Growth</h3>
+            <div class="price">£799 <small style="font-size:12px;color:var(--muted)">/month</small></div>
+            <div class="spacer"></div>
+            <ul style="margin:0;padding-left:18px">
+              <li>Advanced booking flows</li>
+              <li>2–3 calendar/CRM integrations</li>
+              <li>SMS/email confirmations & reminders</li>
+            </ul>
+            <div class="spacer"></div>
+            <a class="btn btn-primary" href="#contact" aria-label="Choose Growth">Book Demo</a>
+
+            <div class="reveal" aria-hidden="true">
+              <h4 style="margin-top:14px">Growth details</h4>
+              <p class="muted">Designed for scaling businesses: advanced qualification, CRM sync and richer analytics to drive conversion improvements.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Advanced call routing & priority queues</li>
+                <li>SMS confirmations & reminders</li>
+                <li>Webhook and API access</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- SCALE -->
+          <article class="plan" role="region" aria-labelledby="scale-title" data-plan>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <h3 id="scale-title">Scale</h3>
+              <div class="meta">Up to 3,000 calls / month</div>
+            </div>
+            <div class="price">£1,499 <small style="font-size:12px;color:var(--muted)">/month</small></div>
+            <div class="spacer"></div>
+            <ul style="margin:0;padding-left:18px">
+              <li>Custom flows & SLA</li>
+              <li>Priority support & dedicated CSM</li>
+              <li>Deposit capture & advanced routing</li>
+            </ul>
+            <div class="spacer"></div>
+            <a class="btn btn-ghost" href="#contact" aria-label="Talk to Sales">Talk to Sales</a>
+
+            <div class="reveal" aria-hidden="true">
+              <h4 style="margin-top:14px">Scale details</h4>
+              <p class="muted">Full concierge service for multi-location and high-volume customers including SLA and dedicated onboarding for enterprise operations.</p>
+              <ul class="list" style="margin-top:8px">
+                <li>Dedicated success manager</li>
+                <li>Custom integrations & SSO</li>
+                <li>Priority onboarding & white-glove setup</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section aria-label="Call to action" style="padding-top:40px;padding-bottom:40px">
+      <div class="container">
+        <div class="cta" role="region" aria-label="Schedule demo">
+          <div>
+            <h3 style="margin:0;font-size:20px">See CallConcierge HQ in action — 10 minutes</h3>
+            <p style="margin:6px 0 0" class="muted">A custom demo mapping your scripts and calendars — no commitment.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact" aria-label="Book my demo">Book My Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-title" style="background:#f8fbff;border-top:1px solid #e5edff;border-bottom:1px solid #e5edff">
+      <div class="container">
+        <h2 id="faq-title" class="section-title">Frequently asked questions</h2>
+        <div class="spacer"></div>
+        <div class="faq-grid">
+          <details>
+            <summary>How fast can we be live?</summary>
+            <p class="muted">Most clients are live within 1–3 business days after call forwarding and scripts are finalised.</p>
+          </details>
+          <details>
+            <summary>Do you integrate with our systems?</summary>
+            <p class="muted">Yes — Google/Outlook calendars, HubSpot, Pipedrive, custom CRMs via webhooks, plus many scheduling tools.</p>
+          </details>
+          <details>
+            <summary>Is call recording GDPR-compliant?</summary>
+            <p class="muted">We provide consent scripts and configurable retention; a DPA is available on request.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Book your live demo</h2>
+        <p class="muted">Fill this form and we’ll be in touch within 24 hours. Prefer a direct booking? Replace the form with your Calendly embed for instant scheduling.</p>
+        <div class="spacer"></div>
+
+        <form action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST" aria-describedby="formHelp" novalidate>
+          <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" />
+
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Smith" required />
+
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="jane@company.co.uk" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+44 20 1234 5678" required />
+
+          <label for="business">Business / Industry</label>
+          <input id="business" name="business" type="text" placeholder="e.g., Med Spa, Law Firm" required />
+
+          <label for="message">What are you looking to improve?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Missed calls after hours, no-shows, routing…"></textarea>
+
+          <div class="form-cta">
+            <button class="btn btn-primary" type="submit">Request Demo</button>
+            <div class="note">By submitting you agree to our <a href="/terms.html">Terms</a> and <a href="/privacy.html">Privacy Policy</a>. We’ll never share your data.</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px">
+      <div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true"><defs><linearGradient id="lg2" x1="0" x2="1"><stop offset="0" stop-color="#0b6cff"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#lg2)"/></svg>
+          <div style="font-weight:700">CallConcierge <span style="color:var(--brand)">HQ</span></div>
+        </div>
+        <p style="margin-top:14px">AI-powered live receptionists for UK businesses. Answer every call. Qualify every lead. Book more clients.</p>
+        <p class="muted" style="margin-top:8px">© <span id="year"></span> CallConcierge HQ. All rights reserved.</p>
+      </div>
+      <div>
+        <strong>Company</strong><br />
+        <a href="#features">Features</a><br />
+        <a href="#industries">Industries</a><br />
+        <a href="#pricing">Pricing</a><br />
+        <a href="#contact">Book Demo</a>
+      </div>
+      <div>
+        <strong>Legal</strong><br />
+        <a href="/privacy.html">Privacy Policy</a><br />
+        <a href="/terms.html">Terms of Service</a><br />
+        <span class="muted">VAT info on request</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessibility helpers + interactivity -->
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('mobileMenu');
+      if(!btn || !menu) return;
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        menu.style.display = isOpen ? 'none' : 'flex';
+        menu.setAttribute('aria-hidden', String(isOpen));
+      });
+    })();
+
+    // Expandable panels (cards/plans/industries): hover on desktop, click-to-toggle on touch
+    (function(){
+      const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+      // Add event listeners to all expandable items
+      document.querySelectorAll('[data-expandable]').forEach(el => {
+        const reveal = el.querySelector('.reveal');
+        if(!reveal) return;
+        el.addEventListener('focusin', ()=> {
+          reveal.style.maxHeight = reveal.scrollHeight + 'px';
+          reveal.setAttribute('aria-hidden','false');
+          el.classList.add('group-open');
+        });
+        el.addEventListener('focusout', ()=> {
+          reveal.style.maxHeight = null;
+          reveal.setAttribute('aria-hidden','true');
+          el.classList.remove('group-open');
+        });
+        if(isTouch){
+          el.addEventListener('click', (e) => {
+            const target = e.target;
+            if(target.tagName === 'A' || target.closest('a')) return;
+            const open = el.classList.toggle('group-open');
+            if(open){
+              reveal.style.maxHeight = reveal.scrollHeight + 'px';
+              reveal.setAttribute('aria-hidden','false');
+            } else {
+              reveal.style.maxHeight = null;
+              reveal.setAttribute('aria-hidden','true');
+            }
+          });
+        }
+      });
+
+      // Pricing reveals
+      document.querySelectorAll('[data-plan]').forEach(plan => {
+        const reveal = plan.querySelector('.reveal');
+        if(!reveal) return;
+        plan.addEventListener('focusin', ()=> {
+          reveal.style.maxHeight = reveal.scrollHeight + 'px';
+          reveal.setAttribute('aria-hidden','false');
+          plan.classList.add('group-open');
+        });
+        plan.addEventListener('focusout', ()=> {
+          reveal.style.maxHeight = null;
+          reveal.setAttribute('aria-hidden','true');
+          plan.classList.remove('group-open');
+        });
+        if(isTouch){
+          plan.addEventListener('click', (e) => {
+            const t = e.target;
+            if(t.tagName === 'A' || t.closest('a')) return;
+            const open = plan.classList.toggle('group-open');
+            if(open){
+              reveal.style.maxHeight = reveal.scrollHeight + 'px';
+              reveal.setAttribute('aria-hidden','false');
+            } else {
+              reveal.style.maxHeight = null;
+              reveal.setAttribute('aria-hidden','true');
+            }
+          });
+        }
+      });
+
+      // Industries reveal handling (touch)
+      document.querySelectorAll('.industries [data-expandable]').forEach(el => {
+        const reveal = el.querySelector('.reveal');
+        if(!reveal) return;
+        if(isTouch){
+          el.addEventListener('click', (e) => {
+            const open = el.classList.toggle('group-open');
+            reveal.style.maxHeight = open ? reveal.scrollHeight + 'px' : null;
+            reveal.setAttribute('aria-hidden', String(!open));
+          });
+        } else {
+          el.addEventListener('focusin', ()=> { reveal.style.maxHeight = reveal.scrollHeight + 'px'; reveal.setAttribute('aria-hidden','false') });
+          el.addEventListener('focusout', ()=> { reveal.style.maxHeight = null; reveal.setAttribute('aria-hidden','true') });
+        }
+      });
+    })();
+
+    // Smooth scrolling for in-page anchors
+    (function(){
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function(e){
+          const href = this.getAttribute('href');
+          if(href === '#' || href === '') return;
+          const id = href.slice(1);
+          const el = document.getElementById(id);
+          if(el){
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth', block:'start'});
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('menuBtn');
+            if(menu && btn && btn.getAttribute('aria-expanded') === 'true'){
+              btn.click();
+            }
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
